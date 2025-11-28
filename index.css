@@ -172,8 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .repair-block__picture {
-    width: 320px;
-    height: 176px;
+    min-width: 320px;
+    height: auto;
 }
 
 @media screen and (min-width: 768px){
@@ -206,8 +206,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .repair-block__picture {
-        width: 360px;
-        height: 208px;
+        min-width: 360px;
         border-radius: 2%;
     }
 
@@ -246,8 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .repair-block__picture {
-        width: 531px;
-        height: 307px;
+        min-width: 531px;
         border-radius: 2%;
     }
 }
