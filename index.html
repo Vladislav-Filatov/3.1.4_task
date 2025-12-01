@@ -9,61 +9,85 @@
 <body>
     <header class="header">
         <div class="heder__menu-wrapper">
-            <button class="header__button header__button--menu">
+            <button class="button button--menu">
                 <img src="images/menu.svg" alt="Меню">
             </button>
             <a class="header__logo" href="#">
                 <img src="images/Group.png" alt="Логотип CPS" width="96" height="51">
             </a>
-            <div class="header__divider"></div>
         </div>
-        <nav class="header__actions">
-            <button class="header__button header__button--settings">
-                <img src="images/settings.svg" alt="Настройки">
-            </button>
-            <button class="header__button header__button--phone">
-                <img src="images/phone.svg" alt="Звонок">
-            </button>
-        </nav>
+        <ul class="header__actions">
+            <li>
+                <button class="button button--phone">
+                    <img src="images/phone.svg" alt="Звонок">
+                </button>
+            </li>
+            <li>
+                <button class="button button--message">
+                    <img src="images/settings.svg" alt="Настройки">
+                </button>
+            </li>
+            <li>
+                <button class="button button--contacts">
+                    <img src="images/phone.svg" alt="Звонок">
+                </button>
+            </li>
+            <li>
+                <button class="button button--settings">
+                    <img src="images/settings.svg" alt="Настройки">
+                </button>
+            </li>
+            <li>
+                <button class="button button--search">
+                    <img src="images/phone.svg" alt="Звонок">
+                </button>
+            </li>
+        </ul>
     </header>
     <main class="content">
         <section class="services">
             <div class="services__title">
                 <h2>Услуги и сервисы</h2>
-            </div>
-            <div class="services-list-wrapper">
-                <ul class="services-list">
-                    <li>
-                        <button class="services-list__button services-list__button--checked">
-                            Ремонтируемые устройства
+                <ul class="services__actions">
+                    <li class="services__action">
+                        <span class="action__label">
+                            Оставить заявку
+                        </span>
+                        <button class="button button--request">
+                            <img src="images/settings.svg" alt="Заявка">
                         </button>
                     </li>
-                    <li>
-                        <button class="services-list__button">
-                            Дополнительные услуги
-                        </button>
-                    </li>
-                    <li>
-                        <button class="services-list__button">
-                            Цены на услуги
-                        </button>
-                    </li>
-                    <li>
-                        <button class="services-list__button">
-                            Адреса сервисных центров
-                        </button>
-                    </li>
-                    <li>
-                        <button class="services-list__button">
-                            Специальные цены
-                        </button>
-                    </li>
-                    <li>
-                        <button class="services-list__button">
-                            Отзывы
+                    <li class="services__action">
+                        <span class="action__label">
+                            Статус ремонта
+                        </span>
+                        <button class="button button--status">
+                            <img src="images/phone.svg" alt="Поиск">
                         </button>
                     </li>
                 </ul>
+            </div>
+            <div class="services-list-wrapper">
+                <nav class="services-list">
+                    <a class="services-list__service services-list__service--checked">
+                        Ремонтируемые устройства
+                    </a>
+                    <a class="services-list__service">
+                        Дополнительные услуги
+                    </a>
+                    <a class="services-list__service">
+                        Цены на услуги
+                    </a>
+                    <a class="services-list__service">
+                        Адреса сервисных центров
+                    </a>
+                    <a class="services-list__service">
+                        Специальные цены
+                    </a>
+                    <a class="services-list__service">
+                        Отзывы
+                    </a>
+                </nav>
             </div>
         </section>
         <section class="repair-block">

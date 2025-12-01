@@ -1,8 +1,10 @@
 html,
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
+    min-width: 320px;
+    max-width: 1920px;
     height: 100%;
     font-family: "TT Lakes", sans-serif;
 }
@@ -29,6 +31,22 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
     font-family: "TT Lakes";
+    src: url("./fonts/TTLakes-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("./fonts/TTLakes-DemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Lakes";
     src: url("./fonts/TTLakes-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
@@ -48,7 +66,22 @@ h1, h2, h3, h4, h5, h6 {
     gap: 16px;
 }
 
-.header__button {
+.header__logo {
+    position: relative;
+}
+
+.header__logo::after {
+    right: -20px;
+    top: 12px;
+    content: '';
+    position: absolute;
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+}
+
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,17 +91,22 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FF3E79;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.header__divider {
-    border-left: 2px solid #EAEAEA;
-    height: 32px;
-    border-radius: 1px;
+.button:hover {
+    opacity: 0.75;
 }
 
 .header__actions {
     display: flex;
     gap: 16px;
+}
+
+.header__actions li:nth-child(1),
+.header__actions li:nth-child(2),
+.header__actions li:nth-child(3) {
+    display: none;
 }
 
 .content {
@@ -95,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0 4px 4px 0;
 }
 
+.services__actions {
+    display: none;
+}
+
 .services-list {
     display: flex;
     gap: 2px;
@@ -118,17 +160,23 @@ h1, h2, h3, h4, h5, h6 {
     pointer-events: none;
 }
 
-.services-list__button {
-    border: none;
-    background: transparent;
+.services-list__service {
     padding: 8px 16px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 500;
     color: #7E7E82;
     white-space: nowrap;
+    transition: 0.3s ease;
 }
 
-.services-list__button--checked{
+.services-list__service:hover {
+    background-color: #edeaea;
+}
+
+.services-list__service--checked{
     border: 2px solid #B8FFEC;
     background-color: white;
     border-radius: 6%;
@@ -172,6 +220,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
     color: inherit;
     align-items: center;
+    transition: 0.3s ease;
+}
+
+.repair-block__read-more-button:hover {
+    opacity: 0.75;
 }
 
 .repair-block__picture {
@@ -181,12 +234,33 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 768px){
 
-    .header__logo {
-        order: 1;
+    .header__logo::after {
+        left: -20px;
     }
 
     .heder__menu-wrapper {
-        gap: 20px
+        gap: 42px
+    }
+
+    .header__actions li:nth-child(1),
+    .header__actions li:nth-child(2),
+    .header__actions li:nth-child(3) {
+        display: block;
+    }
+
+    .button--settings {
+        position: relative;
+        margin-left: 26px;
+    }
+
+    .button--settings::before {
+        content: '';
+        position: absolute;
+        height: 32px;
+        left: -21px;
+        width: 2px;
+        background-color: #EAEAEA;
+        border-radius: 1px;
     }
 
     .services__title {
@@ -220,8 +294,35 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1120px) {
 
+    .header {
+        display: none;
+    }
+
+    .services {
+        padding-top: 42px;
+    }
+
     .services__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-left: 32px;
+        padding-right: 25px;
+    }
+
+    .services__actions {
+        display: flex;
+        gap: 32px;
+    }
+
+    .services__action {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .action__label {
+        font-weight: 500;
     }
 
     .services-list {
