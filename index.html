@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <div class="heder__menu-wrapper">
-            <button class="button button--menu">
+            <button class="button button--open-menu">
                 <img src="images/menu.svg" alt="Меню">
             </button>
             <a class="header__logo" href="#">
@@ -44,6 +44,79 @@
             </li>
         </ul>
     </header>
+    <aside class="side-menu">
+        <header class="side-menu__header">
+            <button class="button button--close-menu">
+                <img src="images/close.svg" alt="Закрыть">
+            </button>
+            <img src="images/Group.png" alt="Логотип CPS" width="96" height="51">
+            <button class="button button--search">
+                <img src="images/search.svg" alt="Найти">
+            </button>
+        </header>
+        <nav class="side-menu__options">
+            <ul class="side-menu__options-list">
+                <li class="options-list__item options-list__item--checked">
+                    <a>Ремонт техники</a>
+                </li>
+                <li class="options-list__item">
+                    <a>Услуги и сервисы</a>
+                </li>
+                <li class="options-list__item">
+                    <a>Корпоративным клиентам</a>
+                </li>
+                <li class="options-list__item">
+                    <a>Продавцам техники</a>
+                </li>
+                <li class="options-list__item">
+                    <a>Партнерам</a>
+                </li>
+                <li class="options-list__item">
+                    <a>Производителям</a>
+                </li>
+                <li class="options-list__item">
+                    <a>Наши сервисные центры</a>
+                </li>
+                <li class="options-list__item">
+                    <a>Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="side-menu__footer">
+            <ul class="footer__controls">
+                <li>
+                    <button class="button button--close-menu">
+                        <img src="images/phone.svg" alt="Позвонить">
+                    </button>
+                </li>
+                <li>
+                    <button class="button button--close-menu">
+                        <img src="images/settings.svg" alt="Настройки">
+                    </button>
+                </li>
+                <li>
+                    <button class="button button--close-menu">
+                        <img src="images/contact.svg" alt="Профиль">
+                    </button>
+                </li>
+            </ul>
+            <address class="contacts contacts--margin-top">
+                <p class="contacts__email">mail@cps.com</p>
+                <p class="contacts__phone-number">8 800 890 8900</p>
+            </address>
+            <ul class="languages languages--margin-top">
+                <li class="language language--checked">
+                    <a>RU</a>
+                </li>
+                <li class="language">
+                    <a>EN</a>
+                </li>
+                <li class="language">
+                    <a>CH</a>
+                </li>
+            </ul>
+        </footer>
+    </aside>
     <main class="content">
         <section class="services">
             <div class="services__title">
@@ -67,28 +140,40 @@
                     </li>
                 </ul>
             </div>
-            <div class="services-list-wrapper">
-                <nav class="services-list">
-                    <a class="services-list__service services-list__service--checked">
-                        Ремонтируемые устройства
-                    </a>
-                    <a class="services-list__service">
-                        Дополнительные услуги
-                    </a>
-                    <a class="services-list__service">
-                        Цены на услуги
-                    </a>
-                    <a class="services-list__service">
-                        Адреса сервисных центров
-                    </a>
-                    <a class="services-list__service">
-                        Специальные цены
-                    </a>
-                    <a class="services-list__service">
-                        Отзывы
-                    </a>
-                </nav>
-            </div>
+            <nav class="services-navigation">
+                <ul class="services-list">
+                    <li class="services-list__service services-list__service--checked">
+                        <a>
+                            Ремонтируемые устройства
+                        </a>
+                    </li>
+                    <li class="services-list__service">
+                        <a>
+                            Дополнительные услуги
+                        </a>
+                    </li>
+                    <li  class="services-list__service">
+                        <a>
+                            Цены на услуги
+                        </a>
+                    </li>
+                    <li  class="services-list__service">
+                        <a>
+                            Адреса сервисных центров
+                        </a>
+                    </li>
+                    <li  class="services-list__service">
+                        <a>
+                            Специальные цены
+                        </a>
+                    </li>
+                    <li  class="services-list__service">
+                        <a>
+                            Отзывы
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
         <section class="repair-block">
             <div class="repair-block__description">
