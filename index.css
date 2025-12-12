@@ -178,15 +178,17 @@ h1, h2, h3, h4, h5, h6 {
     gap: 16px;
 }
 
-.contacts {
+.side-menu__contacts {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: 16px;
     letter-spacing: -0.2px;
 }
 
-.contacts--margin-top {
-    margin-top: 16px;
+.side-menu__contacts a {
+    color: #1B1C21;
+    text-decoration: none;
 }
 
 .contacts__email {
@@ -198,23 +200,18 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-size: 24px;
     font-weight: 700;
-    color: inherit;
-    text-decoration: none;
 }
 
 .button--search {
     justify-self: end;
 }
 
-.languages {
+.side-menu__languages {
     display: flex;
     gap: 7px;
+    margin-top: 40px;
     letter-spacing: -0.2px;
     font-weight: 500;
-}
-
-.languages--margin-top {
-    margin-top: 40px;
 }
 
 .language {
