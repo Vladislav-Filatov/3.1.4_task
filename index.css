@@ -347,6 +347,57 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
+.repair-brands {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+}
+
+.repair-brands__title {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 16px;
+}
+
+.repair-brands__read-more-button {
+    display: none;
+}
+
+.swiper {
+    margin: 0;
+    padding: 16px;
+    height: 100px;
+    position: relative;
+    background-color: #F8F8F8;
+}
+
+.swiper::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: 10px;
+    bottom: 0;
+    width: 26px;
+    height: 82px;
+    background: linear-gradient(to right, transparent, #F8F8F8);
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.swiper-slide {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+}
+
 @media screen and (min-width: 768px){
 
     .header__logo::after {
@@ -404,6 +455,48 @@ h1, h2, h3, h4, h5, h6 {
 
     .description__text {
         line-height: 20px;
+    }
+
+    .swiper {
+        height: auto;
+        padding: 24px;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .swiper-slide {
+        width: 224px;
+    }
+
+    .repair-brands__title {
+        margin-left: 24px;
+    }
+
+    .repair-brands__read-more-button {
+        background: transparent;
+        display: flex;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 24px;
+        gap: 8px;
+        font-size: 16px;
+        border: none;
+        font-family: inherit;
+        color: inherit;
+        align-items: center;
+        transition: 0.3s ease;
+    }
+
+    .repair-brands__read-more-button:hover {
+        opacity: 0.75;
     }
 }
 
@@ -466,5 +559,26 @@ h1, h2, h3, h4, h5, h6 {
     .repair-block__picture {
         min-width: 531px;
         border-radius: 2%;
+    }
+
+    .repair-brands__title {
+        margin-left: 32px;
+    }
+
+    .repair-brands__read-more-button {
+        margin-left: 32px;
+    }
+
+    .swiper {
+        padding: 32px;
+    }
+
+    .swiper-wrapper {
+        gap: 32px;
+    }
+
+
+    .swiper-slide {
+        width: 240px;
     }
 }

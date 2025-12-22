@@ -1,84 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>CPS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="index.css">
+  <title>CPS</title>
 </head>
 <body>
-    <aside class="side-menu">
-        <header class="side-menu__header">
-            <button class="button button--close-menu">
-                <img src="images/close.svg" alt="Закрыть">
-            </button>
-            <img src="images/Group.png" alt="Логотип CPS" width="96" height="51">
-            <button class="button button--search">
-                <img src="images/search.svg" alt="Найти">
-            </button>
-        </header>
-        <nav class="side-menu__options">
-            <ul class="side-menu__options-list">
-                <li class="options-list__item options-list__item--checked">
-                    <a>Ремонт техники</a>
-                </li>
-                <li class="options-list__item">
-                    <a>Услуги и сервисы</a>
-                </li>
-                <li class="options-list__item">
-                    <a>Корпоративным клиентам</a>
-                </li>
-                <li class="options-list__item">
-                    <a>Продавцам техники</a>
-                </li>
-                <li class="options-list__item">
-                    <a>Партнерам</a>
-                </li>
-                <li class="options-list__item">
-                    <a>Производителям</a>
-                </li>
-                <li class="options-list__item">
-                    <a>Наши сервисные центры</a>
-                </li>
-                <li class="options-list__item">
-                    <a>Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <footer class="side-menu__footer">
-            <ul class="footer__controls">
-                <li>
-                    <button class="button button--close-menu">
-                        <img src="images/phone.svg" alt="Позвонить">
-                    </button>
-                </li>
-                <li>
-                    <button class="button button--close-menu">
-                        <img src="images/settings.svg" alt="Настройки">
-                    </button>
-                </li>
-                <li>
-                    <button class="button button--close-menu">
-                        <img src="images/contact.svg" alt="Профиль">
-                    </button>
-                </li>
-            </ul>
-            <address class="side-menu__contacts">
-                <p class="contacts__email"><a href="mailto:mail@cps.com">mail@cps.com</a></p>
-                <p class="contacts__phone-number"><a href="tel:88008908900">8 800 890 8900</a></p>
-            </address>
-            <ul class="side-menu__languages">
-                <li class="language language--checked">
-                    <a>RU</a>
-                </li>
-                <li class="language">
-                    <a>EN</a>
-                </li>
-                <li class="language">
-                    <a>CH</a>
-                </li>
-            </ul>
-        </footer>
-    </aside>
+  <section class="repair-brands">
+    <h4 class="repair-brands__title">
+      Ремонт техники различных брендов
+    </h4>
+    <div class="swiper repair-brands__brand-list">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/lenovo.png" alt="lenovo" width="108" height="32">
+          <img src="images/go.svg" alt="перейти" width="40" height="40">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/samsung.png" alt="samsung" width="116" height="38">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/apple.png" alt="apple" width="44" height="44">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/bosch.png" alt="bosch" width="128" height="28">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/hp.png" alt="hp" width="52" height="52">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/acer.png" alt="acer" width="94" height="24">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button class="repair-brands__read-more-button">
+      <img src="images/readMore.svg" alt="Стрелка вниз">
+      Показать все
+    </button>
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
