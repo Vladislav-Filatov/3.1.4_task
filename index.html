@@ -9,11 +9,13 @@
 </head>
 <body>
   <section class="repair-brands">
-    <h4 class="repair-brands__title">
-      Ремонт техники различных брендов
-    </h4>
+    <div class="gradient-wrapper">
+      <h4 class="repair-brands__title">
+        Ремонт техники различных брендов
+      </h4>
+    </div>
     <div class="swiper repair-brands__brand-list">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper repair-brands__wrapper">
         <div class="swiper-slide brand-list__brand">
           <img src="images/lenovo.png" alt="lenovo" width="108" height="32">
           <img src="images/go.svg" alt="перейти" width="40" height="40">
@@ -38,12 +40,32 @@
           <img src="images/acer.png" alt="acer" width="94" height="24">
           <img src="images/go.svg" alt="перейти">
         </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/Sony.png" alt="Sony" width="128" height="25">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/ViewSonic.png" alt="ViewSonic" width="128" height="21">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/lenovo.png" alt="lenovo" width="108" height="32">
+          <img src="images/go.svg" alt="перейти" width="40" height="40">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/samsung.png" alt="samsung" width="116" height="38">
+          <img src="images/go.svg" alt="перейти">
+        </div>
+        <div class="swiper-slide brand-list__brand">
+          <img src="images/hp.png" alt="hp" width="52" height="52">
+          <img src="images/go.svg" alt="перейти">
+        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
     <button class="repair-brands__read-more-button">
-      <img src="images/readMore.svg" alt="Стрелка вниз">
-      Показать все
+      <img class="read-more-button__image" src="images/readMore.svg" alt="Стрелка вниз">
+      <span class="read-more-button__text">Показать все</span>
     </button>
   </section>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
