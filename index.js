@@ -34,14 +34,12 @@ function checkSize() {
 
 const brandsVisibility = () => {
     if (swiperWrapper.classList.contains('expanded')) {
-        swiperWrapper.classList.remove('expanded');
-        repairBrandsButtonImage.classList.remove('expanded');
         repairBrandsButtonText.textContent = 'Показать все';
     } else {
-        swiperWrapper.classList.add('expanded');
-        repairBrandsButtonImage.classList.add('expanded');
         repairBrandsButtonText.textContent = 'Скрыть';
     }
+    swiperWrapper.classList.toggle('expanded');
+    repairBrandsButtonImage.classList.toggle('expanded');
 };
 
 repairBrandsButton.addEventListener('click',  brandsVisibility);
